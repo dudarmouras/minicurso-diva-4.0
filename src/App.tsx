@@ -1,4 +1,11 @@
 import React, { useState } from "react";
+import Blusinha from "./components/blusinha";
+import kitBlusinhas from "./assets/kit-blusinhas.png";
+import tubeTopRosa from "./assets/tube-top-rosa.png";
+import crocheVerde from "./assets/croche-verde.png";
+import instagramIcon from "./assets/Instagram_icon.png";
+import facebookIcon from "./assets/Facebook_logo.png";
+import whatsappIcon from "./assets/whatsapp_logo.png";
 import Produto from "./components/produto";
 import camisaBranca from "./assets/blusabranca.png";
 import camisaCinza from "./assets/blusacinza.png";
@@ -33,6 +40,36 @@ function App() {
         <div className="search-bar-container">
           <p className="title">loja dos produtos do diva!</p>
           <SearchBar onChange={(e) => setSearchTerm(e.target.value)} />
+          <div className="social-bar">
+            <a
+              href="https://www.instagram.com/diva.citi/"
+              className="social-button"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={instagramIcon} alt="Instagram" className="social-icon" />
+            </a>
+            <a
+              href="https://www.facebook.com"
+              className="social-button"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={facebookIcon} alt="Facebook" className="social-icon" />
+            </a>
+            <a
+              href="https://wa.me/"
+              className="social-button"
+              aria-label="WhatsApp"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={whatsappIcon} alt="WhatsApp" className="social-icon" />
+            </a>
+          </div>
+          
         </div>
         <div className="produtos-container">
           {filteredProdutos.map((produto, index) => (

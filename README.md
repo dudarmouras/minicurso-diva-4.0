@@ -1,6 +1,6 @@
-# Minicurso 2.0
+# Minicurso 4.0
 
-Esse repositório é destinado à segunda edição do minicurso oferecido para a turma intermediária.
+Esse repositório é destinado à quarta edição do minicurso oferecido para a turma intermediária.
 
 ## Pré-requisitos
 
@@ -27,7 +27,7 @@ Sua página com React e TypeScript estará rodando em [http://localhost:3000](ht
 ├── public/                # Arquivos públicos, como index.html
 ├── src/                   # Código-fonte da aplicação
 │   ├── assets/            # Imagens das blusinhas
-│   ├── components/        # Componentes reutilizáveis (SearchBar, Blusinha)
+│   ├── components/        # Componentes reutilizáveis (SearchBar, produtos)
 │   ├── App.tsx            # Componente principal
 │   ├── index.tsx          # Ponto de entrada da aplicação
 │   ├── style.css          # Estilo geral
@@ -45,13 +45,13 @@ TypeScript é uma extensão do JavaScript que adiciona tipagem estática, permit
 ### Exemplo com Props
 
 ```typescript
-interface BlusinhaProps {
+interface ProdutosProps {
     title: string;
     price: string;
     image: string;
 }
 
-const Blusinha = ({ title, price, image }: BlusinhaProps) => (
+const Blusinha = ({ title, price, image }: ProdutosProps) => (
     <div>
         <img src={image} alt={title} />
         <h3>{title}</h3>
@@ -174,13 +174,13 @@ const SearchBar = ({ onChange }: SearchBarProps) => (
 No App.tsx, a tela principal da loja é montada da seguinte forma:
 
 ```jsx
-<div className="blusinhas-container">
-    {filteredBlusinhas.map((blusinha, index) => (
-        <Blusinha
+<div className="produtos-container">
+    {filteredProdutos.map((produto, index) => (
+        <Produto
             key={index}
-            image={blusinha.image}
-            price={blusinha.price}
-            title={blusinha.title}
+            image={produto.image}
+            price={produto.price}
+            title={produto.title}
         />
     ))}
 </div>

@@ -1,8 +1,4 @@
 import React, { useState } from "react";
-import Blusinha from "./components/blusinha";
-import kitBlusinhas from "./assets/kit-blusinhas.png";
-import tubeTopRosa from "./assets/tube-top-rosa.png";
-import crocheVerde from "./assets/croche-verde.png";
 import instagramIcon from "./assets/Instagram_icon.png";
 import facebookIcon from "./assets/Facebook_logo.png";
 import whatsappIcon from "./assets/whatsapp_logo.png";

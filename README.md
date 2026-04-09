@@ -51,7 +51,7 @@ interface ProdutosProps {
     image: string;
 }
 
-const Blusinha = ({ title, price, image }: ProdutosProps) => (
+const Produto = ({ title, price, image }: ProdutosProps) => (
     <div>
         <img src={image} alt={title} />
         <h3>{title}</h3>
@@ -145,8 +145,8 @@ Utilizamos isso na barra de busca:
 E filtramos os itens dinamicamente:
 
 ```javascript
-const filteredBlusinhas = blusinhasList.filter((blusinha) =>
-    blusinha.title.toLowerCase().includes(searchTerm.toLowerCase())
+const filteredProdutos = produtosList.filter((produtos) =>
+    produtos.title.toLowerCase().includes(searchTerm.toLowerCase())
 );
 ```
 
@@ -161,7 +161,7 @@ const SearchBar = ({ onChange }: SearchBarProps) => (
     <div className="search-bar">
         <input
             type="text"
-            placeholder="Procure uma blusinha..."
+            placeholder="Procure um produtos..."
             className="input-box"
             onChange={onChange}
         />

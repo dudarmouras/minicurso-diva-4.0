@@ -1,4 +1,4 @@
-.blusinha-box {
+.produto-box {
   border: 1px solid #404040;
   border-radius: 20px;
   width: 250px;
@@ -10,13 +10,13 @@
   object-fit: cover;
 }
 
-.blusinha-info {
+.produto-info {
   display: flex;
   flex-direction: column;
   align-items: start;
   padding: 10px;
   font-family: "Montserrat", sans-serif;
-
+  
   h1 {
     margin: 0;
     font-size: 1.2rem;

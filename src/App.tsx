@@ -27,13 +27,14 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <p className="title">uma loja de blusinhas</p>
+        <p className="title">loja dos produtos do diva!</p>
       </header>
       <div className="content">
         <div className="search-bar-container">
+          <p className="title">loja dos produtos do diva!</p>
           <SearchBar onChange={(e) => setSearchTerm(e.target.value)} />
         </div>
-        <div className="blusinhas-container">
+        <div className="produtos-container">
           {filteredProdutos.map((produto, index) => (
             <Produto
               key={index}

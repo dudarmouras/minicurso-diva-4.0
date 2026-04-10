@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import instagramIcon from "./assets/Instagram_icon.png";
-import facebookIcon from "./assets/Facebook_logo.png";
-import whatsappIcon from "./assets/whatsapp_logo.png";
-import Produto from "./components/produto";
-import camisaBranca from "./assets/blusabranca.png";
-import camisaCinza from "./assets/blusacinza.png";
-import adesivos from "./assets/adesivos.png";
-import bottomrobo from "./assets/bottomrobodiva.png";
-import bottomdiva from "./assets/bottomdiva.png";
+import instagramIcon from "../assets/Instagram_icon.png";
+import facebookIcon from "../assets/Facebook_logo.png";
+import whatsappIcon from "../assets/whatsapp_logo.png";
+import Produto from "../components/produto";
+import camisaBranca from "../assets/blusabranca.png";
+import camisaCinza from "../assets/blusacinza.png";
+import adesivos from "../assets/adesivos.png";
+import bottomrobo from "../assets/bottomrobodiva.png";
+import bottomdiva from "../assets/bottomdiva.png";
 
 import "./App.css";
-import SearchBar from "./components";
+import SearchBar from "../components/searchbar";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");

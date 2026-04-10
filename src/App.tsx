@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import instagramIcon from "./assets/Instagram_icon.png";
 import facebookIcon from "./assets/Facebook_logo.png";
 import whatsappIcon from "./assets/whatsapp_logo.png";
-import Produto from "./components/produto/index.tsx";
+import Produto from "./components/produto";
 import camisaBranca from "./assets/blusabranca.png";
 import camisaCinza from "./assets/blusacinza.png";
 import adesivos from "./assets/adesivos.png";
@@ -30,12 +30,14 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <p className="title">Lojinha do ✦&lt;div&gt;a✦</p>
+        <p className="title">Lojinha do &lt;div&gt;a</p>
       </header>
       <div className="content">
         <div className="search-bar-container">
-          <p className="title">loja dos produtos do diva!</p>
           <SearchBar onChange={(e) => setSearchTerm(e.target.value)} />
+          
+          <p className="title2">Loja dos produtos do &lt;div&gt;a!</p>
+
           <div className="social-bar">
             <a
               href="https://www.instagram.com/diva.citi/"
